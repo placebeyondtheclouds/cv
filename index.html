@@ -8,11 +8,15 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <title>Aleksandr Mitkov</title>
   <script type="text/javascript">
-  function toggle($elmnt) {
-    if($elmnt.css('display') === 'none') {
-      $elmnt.css({'cssText': 'display: block!important;'});
+  function toggle() {
+var x1 = document.getElementById('english');
+var x2 = document.getElementById('chinese');
+    if(x1.style.display === 'none') {
+      x1.style.display = 'block';
+      x2.style.display = 'none';
     } else {
-      $elmnt.css({'cssText': 'display: none!important;'});
+      x1.style.display = 'none';
+      x2.style.display = 'block';
     }
   }
   </script>
@@ -27,16 +31,9 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            English/中文
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-            <li><a class="dropdown-item" onclick="toggle($('#english'));" href="#">English</a></li>
-            <li><a class="dropdown-item" href="#">中文</a></li>
 
-
-          </ul>
+        <li class="nav-item">
+          <a href="#" class="nav-link" onclick="toggle();">English/中文</a>
         </li>
         <li class="nav-item">
           <a href="" class="nav-link">Current</a>
@@ -98,7 +95,7 @@
 
             <dt class="col-sm-3">Training and education</dt>
             <dd class="col-sm-9">
-              <p>Teaching, second language education, intercultural communication</p>
+              <p></p>
               <ul>
                 <li>Teaching</li>
                 <li>second language education</li>
@@ -120,6 +117,87 @@
             <dt class="col-sm-3">Other</dt>
             <dd class="col-sm-9">
               <p>Information technology, knowledge of electric cars technology. C1 driver’s license</p>
+            </dd>
+          </dl>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <div id="chinese" class="container">
+
+
+    <dl class="row">
+
+      <dt class="col-sm-4">
+        <h1 class="mt-4">萨沙</h1>
+        <p>
+          联系方式: 领英
+        </p>
+        <p>地点: 中国</p>
+      </dt>
+      <dd class="col-sm-8">
+        <dl class="row">
+          <dt class="col-sm-4"></dt>
+          <dd class="col-sm-4 col-4"><img alt="" src="photo.gif" class="img-fluid" /></dd>
+      </dd>
+    </dl>
+    <p>据分析师，初级机器学习工程师</p>
+    <p></p>
+    <div class="row mb-3">
+      <div class="col-md-12 col-12 themed-grid-col">
+        <div class="pb-3">
+          <h4>SKILLS</h4>
+        </div>
+        <div class="container">
+          <dl class="row">
+            <dt class="col-sm-3">编程、数据分析和机器学习</dt>
+            <dd class="col-sm-9">
+              <ul>
+                <li>Python (numpy, pandas, matplotlib\seaborn, librosa, scipy, scikit-learn, TensorFlow\keras)</li>
+                <li>HTML, CSS</li>
+
+              </ul>
+            </dd>
+
+            <dt class="col-sm-3">版本控制系统</dt>
+            <dd class="col-sm-9">git（以Github）</dd>
+            <dt class="col-sm-3">代码编辑器</dt>
+            <dd class="col-sm-9">Jupyter notebooks, Visual Studio Code, Atom</dd>
+            <dt class="col-sm-3">部署</dt>
+            <dd class="col-sm-9">streamlit, Heroku</dd>
+
+
+            <dt class="col-sm-3">教育类</dt>
+            <dd class="col-sm-9">
+              <p></p>
+              <ul>
+                <li>教师能力</li>
+                <li>第二语言教学、二语习得</li>
+                <li>跨文化交际</li>
+              </ul>
+            </dd>
+            <dt class="col-sm-3">语言能力</dt>
+            <dd class="col-sm-9">
+
+              <ul>
+                <li>中文：高级</li>
+                <li>英语：高级</li>
+                <li>俄语：第一语言</li>
+              </ul>
+            </dd>
+
+
+
+            <dt class="col-sm-3">Other</dt>
+            <dd class="col-sm-9">
+              <p>对计算机、信息技术、新能源汽车技术有一定的了解。中国的C1驾照</p>
             </dd>
           </dl>
 
