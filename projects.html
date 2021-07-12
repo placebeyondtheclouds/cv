@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <title>Aleksandr Mitkov - data analysis, machine learning</title>
+  <script type="text/javascript" src="toggle.js"></script>
+
+</head>
+
+<body>
+  <!-- collapsible extended version for future use
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link" onclick="toggle();">English/中文</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Current</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Background</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Projects</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+-->
+  <nav class="navbar navbar-expand navbar-light bg-light">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a href="projects.html" class="nav-link">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" onclick="toggle();">English/中文</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="english" style="display:block" class="container">
+
+    <div class="row mb-3">
+      <div class="col-md-12 col-12 themed-grid-col">
+        <div class="pb-3">
+          <h4>PROJECTS</h4>
+        </div>
+        <div class="container">
+          <dl class="row">
+            <dt class="col-sm-3">Machine learning</dt>
+            <dd class="col-sm-9">Machine learning project as a part of the MA thesis: Gathered the data, using Python and Jupyter notebooks built a dataset, and then built a CNN machine learning model for Mandarin Chinese tones pronunciation
+              evaluation. There are three models, all are using features based on Mel-Frequency Cepstral Coefficients. One supplementary model (using features based off the voice fundamental frequency) is used to detect speaker’s gender, while two
+              others are trained to tone pronunciation of the two different genders. Put online as a web-app with streamlit for front/back end.</dd>
+            <dt class="col-sm-3">Data analysis</dt>
+            <dd class="col-sm-9">Interactive report on the dataset for the thesis project, written using Python, deployed on Heroku PaaS platform using Github pipeline.<br/> <img alt="" src="report.png" class="img-fluid  p-4" /></dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+  <div id="chinese" style="display:none" class="container">
+
+    <div class="row mb-3">
+      <div class="col-md-12 col-12 themed-grid-col">
+        <div class="pb-3">
+          <h4>项目</h4>
+        </div>
+        <div class="container">
+          <dl class="row">
+            <dt class="col-sm-3">机器学习</dt>
+            <dd class="col-sm-9">语音分类任务，测评中文声调发音。收集、整理数据，特征选取、提取，用Python、keras编程卷积神经网络模型。性别模型使用基频特征，声调模型用以MFCC创成的特征。</dd>
+            <dt class="col-sm-3">数据分析</dt>
+            <dd class="col-sm-9">普通话语料库分析，交互报告。Python、Github、Heroku。</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</body>
+
+</html>
