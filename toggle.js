@@ -11,6 +11,7 @@ function toggle() {
     }
   }
 
+
   for (var i = 0; i < idListCn.length; i++) {
     item = document.getElementById(idListCn[i]);
     if (item.style.display === 'block') {
