@@ -1,6 +1,6 @@
 function toggle() {
-  var idListEn = ["english"];
-  var idListCn = ["chinese"];
+  var idListEn = ["english0","english-nav"];
+  var idListCn = ["chinese0","chinese-nav"];
   var item;
   for (var i = 0; i < idListEn.length; i++) {
     item = document.getElementById(idListEn[i]);

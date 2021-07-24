@@ -36,6 +36,8 @@
     </div>
   </nav>
 -->
+
+<div id="english-nav" style="display:block" class="container">
   <nav class="navbar navbar-expand navbar-light bg-light">
     <ul class="navbar-nav ms-auto">
       <li class="nav-item">
@@ -49,8 +51,25 @@
       </li>
     </ul>
   </nav>
+</div>
+<div id="chinese-nav" style="display:none" class="container">
+  <nav class="navbar navbar-expand navbar-light bg-light">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link">简历</a>
+      </li>
+      <li class="nav-item">
+        <a href="projects.html" class="nav-link">项目</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" onclick="toggle();">English/中文</a>
+      </li>
+    </ul>
+  </nav>
+</div>
 
-  <div id="english" style="display:block" class="container">
+
+  <div id="english0" style="display:block" class="container">
     <dl class="row">
       <dt class="col">
         <h1 class="mt-4">Aleksandr Mitkov</h1>
@@ -157,7 +176,7 @@ Gathered the data, using Python and Jupyter notebooks built a dataset, and then 
 
 
 
-  <div id="chinese" style="display:none" class="container">
+  <div id="chinese0" style="display:none" class="container">
     <dl class="row">
       <dt class="col">
         <h1 class="mt-4">萨沙</h1>

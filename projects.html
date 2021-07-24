@@ -12,46 +12,40 @@
 </head>
 
 <body>
-  <!-- collapsible extended version for future use
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href=""></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+  <div id="english-nav" style="display:block" class="container">
+    <nav class="navbar navbar-expand navbar-light bg-light">
       <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a href="projects.html" class="nav-link">Projects</a>
+        </li>
         <li class="nav-item">
           <a href="#" class="nav-link" onclick="toggle();">English/中文</a>
         </li>
+      </ul>
+    </nav>
+  </div>
+  <div id="chinese-nav" style="display:none" class="container">
+    <nav class="navbar navbar-expand navbar-light bg-light">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a href="" class="nav-link">Current</a>
+          <a href="index.html" class="nav-link">简历</a>
         </li>
         <li class="nav-item">
-          <a href="" class="nav-link">Background</a>
+          <a href="projects.html" class="nav-link">项目</a>
         </li>
         <li class="nav-item">
-          <a href="" class="nav-link">Projects</a>
+          <a href="#" class="nav-link" onclick="toggle();">English/中文</a>
         </li>
       </ul>
-    </div>
-  </nav>
--->
-  <nav class="navbar navbar-expand navbar-light bg-light">
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item">
-        <a href="index.html" class="nav-link">Resume</a>
-      </li>
-      <li class="nav-item">
-        <a href="projects.html" class="nav-link">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link" onclick="toggle();">English/中文</a>
-      </li>
-    </ul>
-  </nav>
+    </nav>
+  </div>
 
-  <div id="english" style="display:block" class="container">
 
+  <div id="english0" style="display:block" class="container">
     <div class="row mb-3">
       <div class="col-md-12 col-12 themed-grid-col">
         <div class="pb-3">
@@ -73,7 +67,6 @@
               <p>Link to the web app.</p>
               <p>Preview:</p>
               <img alt="" src="preview2.gif" class="img-fluid border" />
-
             </dd>
           </dl>
         </div>
@@ -90,8 +83,7 @@
 
 
 
-  <div id="chinese" style="display:none" class="container">
-
+  <div id="chinese0" style="display:none" class="container">
     <div class="row mb-3">
       <div class="col-md-12 col-12 themed-grid-col">
         <div class="pb-3">
@@ -118,8 +110,6 @@
         </div>
       </div>
     </div>
-
-
   </div>
 
 
